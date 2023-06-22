@@ -61,7 +61,7 @@
                 <label for="masc">Feminino</label>
             </p>
             <p>
-                <input type="button" value="Vereficar"onclick="verificar()">
+                <input type="button" value="Vereficar" onclick="verificar()">
             </p>
         </div>
         <div id="res">
@@ -83,6 +83,7 @@
             var fsex = document.getElementByName('radsex')
             var idade = ano - Number(fano.value)
             var gênero = ''
+            }
         if(fsex[0].checked) {
                 gênero = 'Homem'
                 if (idade_>=0 && < 10) {

@@ -83,6 +83,7 @@
                 var fsex = document.getElementByName('radsex')
                 var idade = ano - Number(fano.value)
                 var gênero = ''
+                var img = document.createElement("img");
                 
                 if(fsex[0].checked) {
                     gênero = 'Homem'
@@ -107,7 +108,7 @@
                         img.setAttribute('src', 'idade/foto-idoso-f.jpg')
                     }
                 } 
-                res.style.textAlign = 'Center'
+                res.style.textAlign = 'center'
                 res.innerHTML = `Detectamos ${gênero} com ${idade} anos. `
                 res.appendChild(img)
             }
